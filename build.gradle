@@ -6,7 +6,7 @@ plugins {
     id 'org.owasp.dependencycheck' version '9.1.0'
 }
 
-group = 'co.pragma'
+group = 'com.pragma'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -26,7 +26,6 @@ subprojects {
     }
 
     dependencies {
-        // Agregar Lombok como dependencia
         compileOnly 'org.projectlombok:lombok:1.18.22'
         annotationProcessor 'org.projectlombok:lombok:1.18.22'
     }
