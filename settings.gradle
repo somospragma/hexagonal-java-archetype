@@ -1,0 +1,6 @@
+rootProject.name = 'hexagonal-java-archetype'
+
+include 'application'
+include 'domain'
+include 'infrastructure'
+

@@ -1,8 +1,8 @@
 package com.pragma.hexagonal_archetype.driven_adapters.jpa.repository;
 
-import com.pragma.hexagonal_archetype.driven_adapters.jpa.mappers.UserEntityMapper;
 import com.pragma.archetype.driven_port.repository.UserRepositoryPort;
 import com.pragma.archetype.model.UserModel;
+import com.pragma.hexagonal_archetype.driven_adapters.jpa.mappers.UserEntityMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

@@ -1,9 +1,12 @@
 package com.pragma.hexagonal_archetype.entry_points.rest.mappers;
 
 
-import com.pragma.hexagonal_archetype.entry_points.rest.dto.UserDto;
 import com.pragma.archetype.model.UserModel;
-import org.mapstruct.*;
+import com.pragma.hexagonal_archetype.entry_points.rest.dto.UserDto;
+import org.mapstruct.Mapper;
+import org.mapstruct.NullValueCheckStrategy;
+import org.mapstruct.NullValuePropertyMappingStrategy;
+import org.mapstruct.ReportingPolicy;
 
 import java.util.List;
 

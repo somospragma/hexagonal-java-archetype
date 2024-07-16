@@ -1,7 +1,7 @@
 package com.pragma.hexagonal_archetype.driven_adapters.jpa.mappers;
 
-import com.pragma.hexagonal_archetype.driven_adapters.jpa.entity.UserEntity;
 import com.pragma.archetype.model.UserModel;
+import com.pragma.hexagonal_archetype.driven_adapters.jpa.entity.UserEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.NullValueCheckStrategy;
 import org.mapstruct.NullValuePropertyMappingStrategy;

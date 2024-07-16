@@ -1,0 +1,33 @@
+plugins {
+    id 'idea'
+    id 'jacoco'
+    id 'java-gradle-plugin'
+    id 'com.gradle.plugin-publish' version '1.2.1'
+    id 'org.owasp.dependencycheck' version '9.1.0'
+}
+
+group = 'co.pragma'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        // Agregar Lombok como dependencia
+        compileOnly 'org.projectlombok:lombok:1.18.22'
+        annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    }
+}

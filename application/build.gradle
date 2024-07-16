@@ -1,0 +1,24 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.0'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+
+group = 'com.pragma'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':infrastructure')
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springdoc:springdoc-openapi-ui:1.5.10'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
+}
+
+ext {
+    set('springBootVersion', '2.5.0')
+}
