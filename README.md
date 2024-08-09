@@ -1,1 +1,1 @@
-# hexagonal-java-archetype
+# clean-architecture-archetype

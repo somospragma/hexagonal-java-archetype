@@ -22,7 +22,7 @@ ENV PATH $JAVA_HOME/bin:$PATH
 
 COPY --from=builder /jlinked /opt/jdk/
 
-ADD application/target/hexagonal-archetype.jar hexagonal-archetype.jar
+ADD application/target/clean-architecture-archetype.jar clean-architecture-archetype.jar
 
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/hexagonal-archetype.jar"]
+ENTRYPOINT ["java", "-jar", "/clean-architecture-archetype.jar"]
